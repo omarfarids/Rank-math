@@ -1,0 +1,322 @@
+:root {
+    font-family: "Karla", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  p {
+    opacity: 0.8;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+  }
+  button{
+    background-color: unset;
+    border: unset;
+  }
+  /*======  flex items ======*/
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+  }
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  .centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body {
+    background-color: #e5eaf1;
+  }
+
+  .phone-container{
+    background:  url("../assets/phone.png") no-repeat;
+    padding: 40px 3px;
+    position: relative;
+    margin: 100px;
+    width: fit-content;
+}
+
+.dropdown-btn {
+    font-size: 108px;
+    cursor: pointer;
+    color: #4c5968;
+}
+
+.phone-header {
+    font-size: 58px;
+    color: #434358;
+    font-weight: bold;
+    margin:  100px 100px 70px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .phone-header_icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+  }
+
+    .phone-header_text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 108px;
+        letter-spacing: -3px;
+        padding: 50px;
+        color: #4c5968;
+    }
+
+  .phone-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left:226.5px;
+    width: 1000px;
+    height: 100px;
+    border-radius: 0 0 100px 100px;
+    background-color: #f3f6f9;
+  }
+
+  .icon {
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    color:#fff;
+    font-size: 108px;
+}
+
+.orange-icon {
+    background-image: linear-gradient(0deg, #ff8f17 0%, #ffc743 100%);
+  }
+
+.blue-icon {
+    background-image: linear-gradient(0deg, #1d71f1 0%, #17c7fb 100%);
+}
+
+.red-icon {
+    background-image: linear-gradient(0deg, #fa23a2 0%, #ff677c 100%);
+}
+
+  .phone-body_section {
+    margin: 0 180px 50px;
+    padding: 70px;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: all .3s linear ;
+
+  }
+
+  .phone-body {
+    height: 2060px;
+    overflow-y: hidden;
+  }
+  
+  .body_section-dropdown{
+    transition: all .3s linear ;
+  }
+
+  .close {
+    transform: rotate(180deg);
+  }
+
+
+  .bitcoin-title {
+    font-size: 53px;
+    color: #4c5968;
+    font-weight: bold;
+    margin-left: 50px;
+  }
+
+  .body_section-bitcoin {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .bitcoin-short-title {
+    font-size: 53px;
+    color: #aeb8c4;
+    font-weight: bold;
+  }
+
+  .body_section-btc-total {
+    font-size: 125px;
+    color: #4c5968;
+    font-weight: bold;
+    margin:40px 0 ;
+}
+
+.body_section-usd-total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:40px 0 ;
+    align-items: center;
+  }
+
+  .usd-total {
+    font-size: 75px;
+    color: #aeb8c4;
+    font-weight: bold;
+  }
+
+  .usd-percentage {
+    width: 282px;
+height: 103px;
+border-radius: 51px;
+background-color: #ee225d;
+    font-size: 53px;
+color: #ffffff;
+font-weight: bold;
+  }
+
+  .body_section-dropdown {
+    font-size: 80px;
+color: #aeb8c4;
+border: unset;
+background-color: unset;
+margin-left: 490px;
+
+cursor: pointer;
+  }
+
+  .body_time-toggle {
+    display: flex;
+    flex-direction: row;
+    margin: 0 200px 40px;
+  }
+
+  .time-toggle {
+    font-size: 50px;
+    color: #aeb8c4;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:150px ;
+    width: 180px;
+    height: 102px;
+    border-radius: 51px;
+    
+    cursor: pointer;
+}
+
+
+
+.time-toggle:hover {
+    background-color: #aeb8c4;
+    color: #fff;
+  }
+
+.time-toggle.active {
+    background-color: #aeb8c4;
+    color: #fff;
+  }
+
+.phone-body_supsection {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0 180px;
+    gap: 80px;
+}
+
+.phone-footer {
+    font-size: 58px;
+    color: #434358;
+    font-weight: bold;
+    margin: 50px 100px 80px;
+}
+
+.transaction-type {
+    font-size: 53px;
+color: #4c5968;
+font-weight: bold;
+padding-top: 20px;
+}
+
+.charts-label {
+    font-size: 50px;
+color: #9a9bb0;
+font-weight: bold;
+gap: 200px;
+}
+
+.dot {
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.red {
+    background-color: #ef2755;
+}
+
+.green {
+    background-color: #1ec070;
+}
+
+.footer-btns {
+    display: flex;
+    flex-direction: row;
+    margin: 0 200px 40px;
+    padding-top: 100px;
+}
+
+.btn {
+    font-size: 88px;
+    color: #aeb8c4;
+    cursor: pointer;
+    margin-right:220px ;
+}
+
+.btn:hover{
+
+    color: #4c5968;
+}
+
+.btn.active {
+    color: #4c5968;
+}
+
+.back-btn {
+    width: 526px;
+    height: 21px;
+    border-radius: 10px;
+    background-color: #aeb8c4;
+    cursor: pointer;
+    margin-left: 450px;
+}
+
+
+.dropdown-listitems {
+  font-size: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  color:#4c5968;
+}
+
+.danger {
+  color: rgb(255, 99, 71);
+}
+
+.dropdown-listitems:hover {
+  background-color: #bcc4ce;
+}
