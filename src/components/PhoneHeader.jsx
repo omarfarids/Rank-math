@@ -22,7 +22,7 @@ const PhoneHeader = () => {
 
   return (
     <div>
-    <Container className={'phone-header'} coHeight={'500px'} coWidth={'1453px'} radias={'150px 150px 0 0'}>
+    <Container className={'phone-header'} coHeight={'80px'} coWidth={'260px'} radias={'20px 20px 0 0'}>
           <div className="phone-header_icons">
             <p>9:45</p>
             <div>

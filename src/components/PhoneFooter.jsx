@@ -7,7 +7,7 @@ import {AiTwotoneSetting} from 'react-icons/ai'
 
 const PhoneFooter = () => {
   return (
-    <Container className={'phone-footer'} coHeight={'400px'} coWidth={'1453px'} radias={'0 0 150px 150px'}>
+    <Container className={'phone-footer'} coHeight={'75px'} coWidth={'260px'} radias={'0 0 20px 20px'}>
         <div className='footer-btns'>
             <button className='btn active'><BiSolidWallet /></button>
             <button className='btn'><FaCompass /></button>

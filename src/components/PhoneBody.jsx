@@ -16,7 +16,7 @@ const PhoneBody = () => {
 
   return (
     <div className='phone-body'>
-        <Container  className={'phone-body_section'} coHeight={ showToggleDropdown ? '1076px' : '700px'} coWidth={ '1269px' }>
+        <Container  className={'phone-body_section'} coHeight={ showToggleDropdown ? '170px' : '120px'} coWidth={ '240px' }>
             <div className='body_section-bitcoin'>
                 <div className='body_section-bitcoin'>
 
@@ -54,15 +54,15 @@ const PhoneBody = () => {
           }} className={`time-toggle ${dataFilter === 'year' ? 'active' : ''}`}>Year</button>
         </div>
 
-        <Container  className={'phone-body_section section-charts flex-column'} coHeight={'700px'} coWidth={'1269px'}>
+        <Container  className={'phone-body_section section-charts flex-column'} coHeight={'120px'} coWidth={'240px'}>
             <div className='charts-label flex-row'>
                 <p className='label'><div className='dot red'></div> Lower:${Math.min(...graphsData.map(item=>{
                   return item['pv']
                 }))}</p>
                 <p className='label'><div className='dot green'></div> Higher:$6.857</p>
             </div>
-        <AreaChart width={1100} height={500} data={graphsData}
-            margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
+        <AreaChart width={235} height={90} data={graphsData}
+            margin={{ top: 5, right: 10, left: 0, bottom: 0 }}>
             <defs>
                 <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="5%" stopColor="#f99d21" stopOpacity={0.5}/>
@@ -73,12 +73,12 @@ const PhoneBody = () => {
                 <stop offset="95%" stopColor="#f99d21" stopOpacity={0.1}/>
                 </linearGradient>
             </defs>
-            <Area type="monotone" dataKey="pv" strokeWidth={8} stroke="#f99d21" fillOpacity={5} fill="url(#colorPv)" />
+            <Area type="monotone" dataKey="pv" strokeWidth={3} stroke="#f99d21" fillOpacity={5} fill="url(#colorPv)" />
         </AreaChart>
         </Container>
 
         <div className='phone-body_supsection'>
-            <Container className={'supsection-card centered'} coHeight={'421px'} coWidth={'590px'}>
+            <Container className={'supsection-card centered'} coHeight={'90px'} coWidth={'110px'}>
                 <div>
                     <div className='icon centered blue-icon'>
                         <FaDollarSign />
@@ -86,7 +86,7 @@ const PhoneBody = () => {
                     <p className='transaction-type'>Buy BTC</p>
                 </div>
             </Container>
-            <Container className={'supsection-card centered'}  coHeight={'421px'} coWidth={'590px'}>
+            <Container className={'supsection-card centered'}  coHeight={'90px'} coWidth={'110px'}>
                 <div>
                     <div className='icon centered red-icon'>
                         <FaDollarSign />
